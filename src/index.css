@@ -1,0 +1,81 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+}
+
+.body {
+    background: #F9F9F9;
+    padding: 0;
+}
+
+.Name {
+    display: flex;
+    padding-left: 50px;
+}
+
+.bg-body-tertiary {
+    display: flex;
+    /* gap: 30px; */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Landing {
+    display: flex;
+}
+
+form {
+    background: whitesmoke;
+    width: 400px; 
+    height: 55px;
+    display: flex;
+    border-radius: 50px;
+}
+
+form input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+form button {
+    background: rgb(48, 173, 93);
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    /* color: #fff; */
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 50px;
+    /* width: 200px; */
+}
+
+form .fa-search {
+    align-self: center;
+    padding: 10px 20px;
+    /* color: #777;   */
+}
+
+.secondface {
+    display: flex;
+    gap: 150px;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.Png1 img {
+    width: 400px;
+    height: 480px;
+    /* top: 189px; */
+    /* left: 90px; */
+    /* padding: 0px, 60px, 0px, 0px; */
+    border-top-left-radius: 130px;
+    border-bottom-left-radius: 130px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.secondword {}
