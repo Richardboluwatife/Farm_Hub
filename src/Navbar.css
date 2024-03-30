@@ -1,0 +1,20 @@
+.Navbar{
+    display: flex;
+    gap: 250px;
+    padding-left: 60px;
+}
+
+.li{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+button{
+    border-radius: 50PX;
+    background-color: #16A34A;
+    padding: 20px;
+    width: 210px;
+    border: none;
+    cursor: pointer;
+}
