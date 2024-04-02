@@ -1,90 +1,3 @@
-// import React, { useState } from 'react';
-// import { assets } from './assets/assets';
-
-// const FarmhubInfo = () => {
-//   const [isExpanded, setIsExpanded] = useState(false);
-
-//   const toggleExpansion = () => {
-//     setIsExpanded(!isExpanded);
-//   };
-
-//   return (
-//     <div className="Faa" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-//       <div className="Faq" style={{ display: "flex", flexDirection: "row", gap: "50px", alignItems: "center" }}>
-//         <div className="im">
-//           <img src={assets.FAQ} alt="" />
-//         </div>
-//         <div className="">
-//           <div>
-//             <h1>Frequently Asked Questions</h1>
-//             <div style={{ display: 'flex', alignItems: 'center' }}>
-//               <div>
-//                 <p>Q: What is Farmhub?</p>
-//               </div>
-//               <div style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={toggleExpansion}>
-//                 {isExpanded ? '*' : '+'}
-//               </div>
-//             </div>
-//             {isExpanded && (
-//               <div style={{ marginTop: '10px' }}>
-//                 <p>Farmhub is an online farmers market connecting consumers directly with local farmers. We offer a wide range of fresh produce, sourced directly from the farm to your table.</p>
-//               </div>
-//             )}
-//           </div>
-//           <div>
-//             <div style={{ display: 'flex', alignItems: 'center' }}>
-//               <div>
-//                 <p>Q: How does Farmhub work?</p>
-//               </div>
-//               <div style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={toggleExpansion}>
-//                 {isExpanded ? '*' : '+'}
-//               </div>
-//             </div>
-//             {isExpanded && (
-//               <div style={{ marginTop: '10px' }}>
-//                 <p>Farmhub is an online farmers market connecting consumers directly with local farmers. We offer a wide range of fresh produce, sourced directly from the farm to your table.</p>
-//               </div>
-//             )}
-//           </div>
-//           <div>
-//             <div style={{ display: 'flex', alignItems: 'center' }}>
-//               <div>
-//                 <p>Q: What is Buy with Others on Farmhub?</p>
-//               </div>
-//               <div style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={toggleExpansion}>
-//                 {isExpanded ? '*' : '+'}
-//               </div>
-//             </div>
-//             {isExpanded && (
-//               <div style={{ marginTop: '10px' }}>
-//                 <p>Farmhub is an online farmers market connecting consumers directly with local farmers. We offer a wide range of fresh produce, sourced directly from the farm to your table.</p>
-//               </div>
-//             )}
-//           </div>
-//           <div>
-//             <div style={{ display: 'flex', alignItems: 'center' }}>
-//               <div>
-//                 <p>Q: Is Farmhub available in my area?   </p>
-//               </div>
-//               <div style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={toggleExpansion}>
-//                 {isExpanded ? '*' : '+'}
-//               </div>
-//             </div>
-//             {isExpanded && (
-//               <div style={{ marginTop: '10px' }}>
-//                 <p>Farmhub is an online farmers market connecting consumers directly with local farmers. We offer a wide range of fresh produce, sourced directly from the farm to your table.</p>
-//               </div>
-//             )}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default FarmhubInfo;
-
-
 import React, { useState } from 'react';
 import { assets } from './assets/assets';
 
@@ -116,26 +29,26 @@ const FarmhubInfo = () => {
   ];
 
   return (
-    <div className="" style={{height:"500px", paddingTop:"100px"}}>
+    <div className="" style={{ height: "500px", paddingTop: "100px", marginBottom:"50px" }}>
       <div className="Faa" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <div className="Faq" style={{ display: "flex", flexDirection: "row", gap: "50px", alignItems: "center" }}>
-          <div className="im">
+          <div className="im" style={{ marginTop: "80px" }}>
             <img src={assets.FAQ} alt="" />
           </div>
-          <div className="">
-            <h1>Frequently Asked Questions</h1>
+          <div className="que" style={{ marginTop: "20px" }}>
+            <h1 style={{ marginBottom: "40px" }}>Frequently Asked Questions</h1>
             {faqData.map((faq, index) => (
-              <div key={index}>
-                <div style={{ display: 'flex', alignItems: 'center', gap:"90px" }}>
+              <div key={index} style={{ marginBottom: "40px" }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: "20px" }}>
                   <div>
                     <p>Q: {faq.question}</p>
                   </div>
-                  <div style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={() => toggleExpansion(faq.question)}>
+                  <div style={{ marginLeft: `${(index + 4) * 10}px`, cursor: 'pointer' }} onClick={() => toggleExpansion(faq.question)}>
                     {expandedQuestion === faq.question ? '-' : '+'}
                   </div>
                 </div>
                 {expandedQuestion === faq.question && (
-                  <div style={{ marginTop: '10px' }}>
+                  <div style={{ marginTop: '10px', marginLeft: '30px' }}>
                     <p>{faq.answer}</p>
                   </div>
                 )}

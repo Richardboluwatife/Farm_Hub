@@ -25,6 +25,7 @@ import Why from './Why'
 import Navbar from './Navbar'
 import FAQ from './FAQ'
 import Waitlist from './Waitlist'
+import Backv from './Backv'
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
             <Navbar/>
             <Header />
             <Us/>
+            <Backv/>
             <Choose/>
             <Why/>
             <FAQ/>

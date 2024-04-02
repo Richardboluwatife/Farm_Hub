@@ -8,6 +8,10 @@ import FAQ from './FAQ.png'
 import Waitlist from './Waitlist.png'
 import Frame from './Frame.png'
 import Whyus from './Whyus.png'
+import Twitter from './Twitter.png'
+import SocialMedia from './Social Media.png'
+import Media from './Media.png'
+import Social from './Social.png'
 
 
 export const assets = {
@@ -21,7 +25,11 @@ export const assets = {
     FAQ,
     Waitlist,
     Frame,
-    Whyus
+    Whyus,
+    Twitter,
+    Social,
+    SocialMedia,
+    Media
 }
 
 // export const menu_list = [
