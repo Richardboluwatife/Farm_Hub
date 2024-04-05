@@ -12,6 +12,10 @@ import Twitter from './Twitter.png'
 import SocialMedia from './Social Media.png'
 import Media from './Media.png'
 import Social from './Social.png'
+import Heading from './Heading.png'
+import Button from './Button.png'
+import object from './objects.png'
+import NavBtn from './NavBtn.png'
 
 
 export const assets = {
@@ -29,7 +33,11 @@ export const assets = {
     Twitter,
     Social,
     SocialMedia,
-    Media
+    Media,
+    Heading,
+    Button,
+    object,
+    NavBtn
 }
 
 // export const menu_list = [

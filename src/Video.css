@@ -1,14 +1,32 @@
 .Main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 90%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin: auto; /* Center the div horizontally */
 }
 
 video {
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.relative {
+    position: absolute;
+    bottom: 10%; /* Adjust the vertical position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff; /* Set text color */
+}
+
+
+.relative h3 {
+    font-size: 1.5rem;
+}
+
+.relative h1 {
+    font-size: 3rem;
+    font-weight: bold;
 }

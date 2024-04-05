@@ -1,46 +1,17 @@
-// import React from 'react'
-// import Navbar from './Navbar'
-// import { Route, Routes } from 'react-router-dom'
-// import Home from './Home'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Waitlist from './Waitlist';
 
-// function App() {
-//     return (
-//         <div>
-//             <Navbar />
-//             <Routes>
-//                 <Route path='/' element={<Home/>} />
-//             </Routes>
-//         </div>
-//     )
-// }
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/waitlist" element={<Waitlist />} />
+      </Routes>
+    </Router>
+  );
+};
 
-// export default App
-
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import Us from './Us'
-import Choose from './Choose'
-import Why from './Why'
-import Navbar from './Navbar'
-import FAQ from './FAQ'
-import Waitlist from './Waitlist'
-import Backv from './Backv'
-
-function App() {
-    return (
-        <div>
-            <Navbar/>
-            <Header />
-            <Us/>
-            <Backv/>
-            <Choose/>
-            <Why/>
-            <FAQ/>
-            <Waitlist/>
-            <Footer />
-        </div>
-    )
-}
-
-export default App
+export default App;

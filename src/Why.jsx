@@ -3,7 +3,7 @@ import { assets } from './assets/assets'
 
 function Why() {
   return (
-    <div>
+    <div className='testimonials' id='testimonials' style={{width:"99%"}}>
         <img src={assets.Why} alt="" />
     </div>
   )

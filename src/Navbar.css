@@ -1,23 +1,26 @@
-.Navbar{
+.navbar {
+    padding: 20px 0px;
     display: flex;
-    gap: 250px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
     padding-left: 60px;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    /* Add your desired background color */
+    z-index: 1000;
+    /* Ensure the navbar appears above other content */
+    /* Add any other styling you want for the navbar */
 }
 
-.li{
+.navbar-menu {
     display: flex;
-    gap: 30px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button{
-    border-radius: 50PX;
-    background-color: #16A34A;
-    padding: 20px;
-    width: 210px;
-    border: none;
-    cursor: pointer;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
 }

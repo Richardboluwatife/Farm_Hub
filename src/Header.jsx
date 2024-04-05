@@ -6,7 +6,7 @@ function Header() {
     <div className='Header'>
       <img src={assets.BG}alt="" />
       <div className="dot">
-        <button>join waitlist</button>
+        {/* <button>join waitlist</button> */}
       </div>
     </div>
   )

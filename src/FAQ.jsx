@@ -29,7 +29,7 @@ const FarmhubInfo = () => {
   ];
 
   return (
-    <div className="" style={{ height: "500px", paddingTop: "100px", marginBottom:"50px" }}>
+    <div className='faq' id='faq' style={{ height: "500px", paddingTop: "100px", marginBottom:"50px", width:"89%" }}>
       <div className="Faa" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <div className="Faq" style={{ display: "flex", flexDirection: "row", gap: "50px", alignItems: "center" }}>
           <div className="im" style={{ marginTop: "80px" }}>
