@@ -3,7 +3,7 @@ import { assets } from './assets/assets'
 
 function Us() {
   return (
-    <div className='whyus' id='whyus' style={{paddingTop:"1px", width:"90%"}}>
+    <div className='whyus' id='whyus' style={{paddingTop:"1px", width:"99%"}}>
         <img src={assets.Whyus} alt="" />
     </div>
   )

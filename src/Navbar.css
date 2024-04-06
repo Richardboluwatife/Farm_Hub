@@ -9,12 +9,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 92%;
     background-color: #fff;
     /* Add your desired background color */
     z-index: 1000;
     /* Ensure the navbar appears above other content */
     /* Add any other styling you want for the navbar */
+    margin-left: 50px;
 }
 
 .navbar-menu {

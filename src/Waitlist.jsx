@@ -51,12 +51,12 @@ const EmailForm = () => {
 
     return (
         <div className="waitlist" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <div className="handleForm" style={{ backgroundColor: "#E7F0E699", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="handleForm" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <div className="ALL" style={{ width: "1200px", display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', borderRadius: "20px" }}>
                     <div className="" style={{ height: "200px" }}>
                         <img src={assets.Waitlist} alt="" />
                     </div>
-                    <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1px', height: "350px", width: "400px", alignItems: 'center', justifyContent: 'center', paddingLeft: "60px", borderRadius: "20px", border: "none", backgroundColor:"#EBEBEB" }}>
+                    <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1px', height: "350px", width: "400px", alignItems: 'center', justifyContent: 'center', paddingLeft: "60px", borderRadius: "20px", border: "none", backgroundColor:"#E7F0E699" }}>
                         <div style={{ display: "flex", gap: "20px", height: "50px" }}>
                             <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" style={{ padding: "10px", borderRadius: "10px" }} />
                             <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Enter your email address" style={{ borderRadius: "10px" }} />
@@ -64,7 +64,7 @@ const EmailForm = () => {
                         <div style={{ display: "flex", gap: "20px", height: "50px" }}>
                             <input type="text" name="phone" value={formData.phone} onChange={handleChange} placeholder="Enter your phone number" style={{ padding: "10px", borderRadius: "10px" }} />
                             <select name="state" value={formData.state} onChange={handleChange} style={{ padding: "10px", width: "175px", borderRadius: "10px" }}>
-                                <option value="">Select State</option>
+                                <option value="">State</option>
                                 {states.map((state) => (
                                     <option key={state} value={state}>{state}</option>
                                 ))}

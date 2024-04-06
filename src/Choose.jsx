@@ -3,7 +3,7 @@ import { assets } from './assets/assets'
 
 function Choose() {
   return (
-    <div style={{width:"90%"}}>
+    <div style={{width:"99%"}}>
         <img src={assets.Choose} alt="" />
     </div>
   )

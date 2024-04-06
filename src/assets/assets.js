@@ -16,7 +16,9 @@ import Heading from './Heading.png'
 import Button from './Button.png'
 import object from './objects.png'
 import NavBtn from './NavBtn.png'
-
+import WhatsApp from './WhatsApp.jpeg'
+import WhatsApp1 from './WhatsApp1.jpeg'
+import WhatsApp2 from './WhatsApp2.jpeg'
 
 export const assets = {
     Logo,
@@ -37,7 +39,11 @@ export const assets = {
     Heading,
     Button,
     object,
-    NavBtn
+    NavBtn,
+    WhatsApp,
+    WhatsApp1,
+    WhatsApp2
+    
 }
 
 // export const menu_list = [

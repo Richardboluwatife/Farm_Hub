@@ -1,15 +1,16 @@
+
 {
   "slides": [
     {
-      "src": "https://picsum.photos/seed/img1/600/400",
+      "src": "https://www.cesdinitiative.org/wp-content/uploads/2023/08/agriculture.jpg",
       "alt": "Image 1 for carousel"
     },
     {
-      "src": "https://picsum.photos/seed/img2/600/400",
+      "src": "https://womeninitiatives.org/wp-content/uploads/2023/11/countryside-worker-posing-with-corn_23-2148761810.jpg",
       "alt": "Image 2 for carousel"
     },
     {
-      "src": "https://picsum.photos/seed/img3/600/400",
+      "src": "https://courses.francescofarm.com/wp-content/uploads/2023/03/farmers-square.jpg",
       "alt": "Image 3 for carousel"
     }
   ]
