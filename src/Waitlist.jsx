@@ -50,7 +50,7 @@ const EmailForm = () => {
     ];
 
     return (
-        <div className="waitlist" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div className="waitlist" id='waitlist' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div className="handleForm" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <div className="ALL" style={{ width: "1200px", display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', borderRadius: "20px" }}>
                     <div className="" style={{ height: "200px" }}>
@@ -71,7 +71,7 @@ const EmailForm = () => {
                             </select>
                         </div>
                         <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Enter your message" style={{ width: "380px", borderRadius: "10px", height: "70px", paddingLeft:"10px"}}></textarea>
-                        <button type="submit" style={{ width: "400px", borderRadius: "10px", height: "50px", width: "385px", marginTop: "5px", backgroundColor:"#16A34A"}}>Submit</button>
+                        <button type="submit" style={{ width: "400px", borderRadius: "10px", height: "50px", width: "385px", marginTop: "5px", backgroundColor:"#16A34A"}}>Join Waitlist</button>
                     </form>
                 </div>
             </div>

@@ -1,50 +1,39 @@
-// import React, { useState } from 'react';
-// import './Navbar.css';
-// import { assets } from './assets/assets';
-// import { Link } from 'react-router-dom';
-
-// const Navbar = () => {
-//   const [menu, setMenu] = useState("whyus");
-
-//   return (
-//     <div className='navbar'>
-//       <Link to='/'><img className='logo' src={assets.BG} alt="" /></Link>
-//       <ul className="navbar-menu">
-//         <a href='#c' onClick={() => setMenu("whyus")} className={menu === "whyus" ? "active" : ""}>Why FarmHub</a>
-//         <a href='#testimonials' onClick={() => setMenu("testimonials")} className={menu === "testimonials" ? "active" : ""}>Testimonials</a>
-//         <a href='#faq' onClick={() => setMenu("faq")} className={menu === "faq" ? "active" : ""}>FAQs</a>
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
-
-import React, { useState } from 'react'
-import './Navbar.css'
-import { assets } from './assets/assets'
-import { Link } from 'react-router-dom';
-// import { StoreContext } from './StoreContext';
+import React, { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; // Importing ScrollLink from 'react-scroll'
+import { assets } from './assets/assets';
+import './Navbar.css';
 
 const Navbar = () => {
-
   const [menu, setMenu] = useState("whyus");
-
-  // const {getTotalCartAmount} =useContext(StoreContext)
 
   return (
     <div className='navbar'>
-      <Link to='/'><img className='logo' src={assets.Logo} alt="" /></Link>
+      {/* <RouterLink to='/'><img className='logo' src={assets.Logo} alt="" /></RouterLink> */}
+      <button className="desktopMenuBtn" style={{backgroundColor:"transparent"}} onClick={() => {
+        document.getElementById('Caro').scrollIntoView({ behavior: "smooth" });
+      }}>
+        <img src={assets.Logo} alt="" className="desktopMenuImg" />
+      </button>
       <ul className="navbar-menu">
-        {/* <Link to='/' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link> */}
-        <a href='#whyus' onClick={() => setMenu("whyus")} className={menu === "whyus" ? "active" : ""}>Why FarmHub</a>
-        <a href='#testimonials' onClick={() => setMenu("testimonials")} className={menu === "testimonials" ? "active" : ""}>Testimonials</a>
-        <a href='#faq' onClick={() => setMenu("faq")} className={menu === "faq" ? "active" : ""}>FAQs</a>
+        <ScrollLink to='whyus' smooth={true} duration={500}><a onClick={() => setMenu("whyus")} className={menu === "whyus" ? "active" : ""}>Why FarmHub</a></ScrollLink>
+        <ScrollLink to='testimonials' smooth={true} duration={500}><a onClick={() => setMenu("testimonials")} className={menu === "testimonials" ? "active" : ""}>Testimonials</a></ScrollLink>
+        <ScrollLink to='faq' smooth={true} duration={500}><a onClick={() => setMenu("faq")} className={menu === "faq" ? "active" : ""}>FAQs</a></ScrollLink>
       </ul>
-      <Link to='/'><img className='logo' src={assets.NavBtn} alt="" /></Link>
+      {/* <RouterLink to='/'><img className='logos' src={assets.NavBtn} alt="" /></RouterLink> */}
+      
+      <button className="desktopMenuBtn" style={{backgroundColor:"transparent"}}onClick={() => {
+        document.getElementById('waitlist').scrollIntoView({ behavior: "smooth" });
+      }}>
+        <img src={assets.Button} alt="" className="desktopMenuImg" />
+      </button>
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;
+
+
+
+
+

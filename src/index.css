@@ -118,3 +118,10 @@
     width: 170px;
     cursor: pointer;
 }
+
+@media (max-width:750px) {
+    .Caro{
+        display: flex;
+        position: relative;
+    }
+}
