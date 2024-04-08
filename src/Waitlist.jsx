@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { assets } from './assets/assets';
+import styled from 'styled-components';
+
 
 const EmailForm = () => {
     const [formData, setFormData] = useState({
@@ -48,15 +50,16 @@ const EmailForm = () => {
         "Kebbi", "Kogi", "Kwara", "Lagos", "Nasarawa", "Niger", "Ogun", "Ondo", "Osun", "Oyo", "Plateau",
         "Rivers", "Sokoto", "Taraba", "Yobe", "Zamfara"
     ];
+    
 
     return (
         <div className="waitlist" id='waitlist' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div className="handleForm" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <div className="ALL" style={{ width: "1200px", display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', borderRadius: "20px" }}>
-                    <div className="" style={{ height: "200px" }}>
+                    <div className="" style={{ height: "200px", width:"500px" }}>
                         <img src={assets.Waitlist} alt="" />
                     </div>
-                    <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1px', height: "350px", width: "400px", alignItems: 'center', justifyContent: 'center', paddingLeft: "60px", borderRadius: "20px", border: "none", backgroundColor:"#E7F0E699" }}>
+                    <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1px', height: "350px", width: "500px", alignItems: 'center', justifyContent: 'center', paddingLeft: "60px", borderRadius: "20px", border: "none", backgroundColor:"#E7F0E699" }}>
                         <div style={{ display: "flex", gap: "20px", height: "50px" }}>
                             <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" style={{ padding: "10px", borderRadius: "10px" }} />
                             <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Enter your email address" style={{ borderRadius: "10px" }} />

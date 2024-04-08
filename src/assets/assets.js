@@ -1,6 +1,6 @@
 import Logo from './Logo.png'
 import BG from './BG.png'
-import Choose from './Choose.png'
+import WhChoose from './WhChoose.png'
 import Why from './Why.png'
 import Footer from './Footer.png'
 import US from './Us.png'
@@ -24,7 +24,7 @@ export const assets = {
     Logo,
     BG,
     Why,
-    Choose,
+    WhChoose,
     Footer,
     US,
     Logo,
