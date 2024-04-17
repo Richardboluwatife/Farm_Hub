@@ -5,6 +5,7 @@ import "./Carousel.css";
 
 export const Carousel = ({ data }) => {
   const [slide, setSlide] = useState(0);
+  const [showArrows, setShowArrows] = useState(true);
 
   const nextSlide = () => {
     setSlide((slide + 1) % data.length);
@@ -22,9 +23,29 @@ export const Carousel = ({ data }) => {
     return () => clearInterval(interval);
   }, [slide]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setShowArrows(window.innerWidth >= 750);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="carousel">
-      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+      {showArrows && (
+        <>
+          <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+          <BsArrowRightCircleFill onClick={nextSlide} className="arrow arrow-right" />
+        </>
+      )}
+
       {data.map((item, idx) => {
         return (
           <img
@@ -35,10 +56,7 @@ export const Carousel = ({ data }) => {
           />
         );
       })}
-      <BsArrowRightCircleFill
-        onClick={nextSlide}
-        className="arrow arrow-right"
-      />
+
       <div className="indicators">
         {data.map((_, idx) => {
           return (

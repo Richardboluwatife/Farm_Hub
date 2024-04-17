@@ -29,22 +29,24 @@ const FarmhubInfo = () => {
   ];
 
   return (
-    <div className='faq' id='faq' style={{ height: "500px", paddingTop: "10px", marginBottom:"50px", width:"90%" }}>
+    <div className='faq' id='faq' style={{ height: "500px", paddingTop: "10px", marginBottom: "50px" }}>
       <div className="Faa" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <div className="Faq" style={{ display: "flex", flexDirection: "row", gap: "50px", alignItems: "center" }}>
           <div className="im" style={{ marginTop: "80px" }}>
             <img src={assets.FAQ} alt="" />
           </div>
-          <div className="que" style={{ marginTop: "20px", backgroundColor:"" }}>
+          <div className="que" style={{ marginTop: "20px", backgroundColor: "" }}>
             <h1 style={{ marginBottom: "40px" }}>Frequently Asked Questions</h1>
             {faqData.map((faq, index) => (
               <div key={index} style={{ marginBottom: "40px" }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: "20px" }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent:"space-between"}}>
                   <div>
                     <p>Q: {faq.question}</p>
                   </div>
                   <div style={{ marginLeft: `${(index + 4) * 10}px`, cursor: 'pointer' }} onClick={() => toggleExpansion(faq.question)}>
-                    {expandedQuestion === faq.question ? '-' : '+'}
+                    <div style={{ fontSize: '24px', cursor: 'pointer' }} onClick={() => toggleExpansion(faq.question)}>
+                      {expandedQuestion === faq.question ? '×' : '+'}
+                    </div>
                   </div>
                 </div>
                 {expandedQuestion === faq.question && (

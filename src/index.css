@@ -64,7 +64,6 @@
     background-color: #E7F0E699;
     width: 1200px;
     border-radius: 20px;
-    margin-left: 60px;
     color: #15803D;
 }
 
@@ -114,15 +113,122 @@
     margin: 0 0.75rem;
 }
 
-.btnFar{
+.btnFar {
     width: 170px;
     cursor: pointer;
 }
 
 @media (max-width:750px) {
-    .Caro{
+    .Caromed {
+        /* padding-left: 40px; */
+        width: 750px;
+    }
+
+    .in {
+        display: none;
+    }
+
+    .Caro {
+        display: flex;
+        /* position: relative; */
+    }
+
+    .Farmhmed {
+        position: absolute;
+    }
+
+    .Farmh .desktopMenuBtn {
+        margin-top: 10px;
+        /* padding-left: 30px; */
+        width: 700px;
+    }
+
+    .Farmh .Farmdes {
+        display: none;
+    }
+
+    .Farmh .Farmingmed {
+        width: 500px;
+        padding-top: 120px;
+    }
+
+    .Farmh h1 {
+        font-size: 40px;
+        padding-top: -40px;
+    }
+
+    .whyux {
+        display: none;
+    }
+
+    .mobwhy {
+        padding-left: 25px;
+    }
+
+    .Main .relative {
+        display: none;
+    }
+
+    .Main {
+        height: 200px;
+    }
+
+    .descho {
+        display: none;
+    }
+
+    .mobcho {
         display: flex;
         position: relative;
+        padding-left: 25px;
+    }
+
+    .relative {
+        position: absolute;
+        top: -0;
+        padding-left: 190px;
+    }
+
+    .Faq .im {
+        display: none;
+    }
+
+    .que {
+        width: 300px;
+    }
+    .faq{
+        padding-left: 15px;
+        width: 370px;
     }
 }
 
+
+@media (min-width:1050px) {
+    .Caro {
+        margin-left: 60px;
+        max-width: 90%;
+    }
+
+    .Farmh .Farmingmed {
+        display: none;
+    }
+
+    .Farmh h1 {
+        font-size: 15px;
+    }
+
+    .mobwhy {
+        display: none;
+    }
+
+    .mobcho {
+        display: none;
+    }
+
+    .Faa {
+        margin-left: 60px;
+    }
+    .faq{
+        width: 90%;
+    }
+}

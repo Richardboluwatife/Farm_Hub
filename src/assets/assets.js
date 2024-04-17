@@ -19,6 +19,11 @@ import NavBtn from './NavBtn.png'
 import WhatsApp from './WhatsApp.jpeg'
 import WhatsApp1 from './WhatsApp1.jpeg'
 import WhatsApp2 from './WhatsApp2.jpeg'
+import online from './online.png'
+import Frame1 from './Frame1.png'
+import Info from './Info.png'
+import Info1 from './Info1.png'
+import Image from './Image.png'
 
 export const assets = {
     Logo,
@@ -42,8 +47,12 @@ export const assets = {
     NavBtn,
     WhatsApp,
     WhatsApp1,
-    WhatsApp2
-    
+    WhatsApp2,
+    online,
+    Frame1,
+    Info,
+    Info1,
+    Image
 }
 
 // export const menu_list = [

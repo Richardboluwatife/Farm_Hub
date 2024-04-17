@@ -6,15 +6,17 @@ import { assets } from './assets/assets';
 
 function Fuck() {
     return (
-        <>
-            <div className='Caro' id='Caro' style={{ display: "flex", maxWidth: "90%", marginLeft: "60px", gap: "40px", border: "black 1px solid", marginBottom: "30px", borderRadius: "20px", height: "570px", marginTop: "85px" }}>
+        <div className='Caromed'>
+            <div className='Caro' id='Caro' style={{ display: "flex", gap: "40px", border: "black 1px solid", marginBottom: "30px", borderRadius: "20px", height: "570px", marginTop: "85px" }}>
                 <Carousel data={slides} />
-                <Farmh />
-                <div className="">
+                <div className="Farmhmed" >
+                    <Farmh />
+                </div>
+                <div className="in">
                     <img src={assets.object} alt="" />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

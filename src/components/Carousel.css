@@ -95,5 +95,7 @@
 
   100% {
     transform: rotate(360deg);
+    justify-content: space-between;
   }
-}
+}  
+

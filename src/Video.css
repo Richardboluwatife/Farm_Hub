@@ -3,6 +3,7 @@
     width: 90%; /* Adjust the width as needed */
     height: 550px; /* Adjust the height as needed */
     margin: auto; /* Center the div horizontally */
+    margin-bottom: 30px;
 }
 
 video {
