@@ -18,7 +18,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="links">
+      <div className="lninks">
         <a href='https://www.facebook.com/profile.php?id=100093047991970' style={{ display: 'block' }}>
           <img src={assets.SocialMedia} alt="" className="link" />
         </a>
@@ -31,6 +31,24 @@ function Footer() {
         <a href='https://mail.google.com/mail/u/0/#inbox' style={{ display: 'block' }}>
           <img src={assets.Social} alt="" className="link" />
         </a>
+      </div>
+
+      <div className="mobfooter">
+        <img src={assets.FarmHub} alt="" style={{paddingLeft:"35px", width:"350px"}} />
+        <div className="links" style={{width:"350px", paddingLeft:"40px"}}>
+          <a href='https://www.facebook.com/profile.php?id=100093047991970' style={{ display: 'block' }}>
+            <img src={assets.SocialMedia} alt="" className="link" />
+          </a>
+          <a href='https://twitter.com/Official_Rickid' style={{ display: 'block' }}>
+            <img src={assets.Twitter} alt="" className="link" />
+          </a>
+          <a href='https://www.youtube.com/channel/UC9IMcJL60IfUXVaHbWWpOOg' style={{ display: 'block' }}>
+            <img src={assets.Media} alt="" className="link" />
+          </a>
+          <a href='https://mail.google.com/mail/u/0/#inbox' style={{ display: 'block' }}>
+            <img src={assets.Social} alt="" className="link" />
+          </a>
+        </div>
       </div>
     </div>
   )

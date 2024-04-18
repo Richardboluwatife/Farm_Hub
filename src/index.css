@@ -44,7 +44,6 @@
 
 .waitlist {
     background-color: #15803D;
-    height: 800px;
 }
 
 .handleForm form {
@@ -99,7 +98,7 @@
     height: 50px;
 }
 
-.links {
+.lninks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,6 +199,34 @@
         padding-left: 15px;
         width: 370px;
     }
+    .lninks{
+        display: none;
+    }
+    .ter{
+        display: none;
+    }
+    .mobfooter{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .links {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin-top: 50px;
+        gap: 5px;
+        padding-left: 35px;
+    }
+    .mobveiwwait{
+        display: none;
+    }
+    .Destopwait{
+        display: none;
+    }
+    .waitlist{
+        height: 600px;
+    }
 }
 
 
@@ -230,5 +257,14 @@
     }
     .faq{
         width: 90%;
+    }
+    .mobfooter{
+        display: none;
+    }
+    .moblieviewwait{
+        display: none;
+    }
+    .waitlist{
+        height: 800px;
     }
 }

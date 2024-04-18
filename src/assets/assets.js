@@ -24,6 +24,8 @@ import Frame1 from './Frame1.png'
 import Info from './Info.png'
 import Info1 from './Info1.png'
 import Image from './Image.png'
+import FarmHub from './FarmHub.png'
+import Frame2 from './Frame2.png'
 
 export const assets = {
     Logo,
@@ -52,7 +54,9 @@ export const assets = {
     Frame1,
     Info,
     Info1,
-    Image
+    Image,
+    FarmHub,
+    Frame2
 }
 
 // export const menu_list = [
